@@ -10,6 +10,7 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = '⛔ No Number!';
   } else if (guess === random) {
     document.querySelector('.message').textContent = '🎉 Correct!';
+    document.querySelector('body').style.backgroundColor('green');
   } else if (guess > random) {
     if (score > 1) {
       document.querySelector('.message').textContent = '📈 Too high!';
